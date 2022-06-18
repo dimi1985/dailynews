@@ -1,8 +1,9 @@
+import 'package:dailynews/model/NewsModel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:newsappflutter/model/ArticalModel.dart';
-import 'package:newsappflutter/model/NewsModel.dart';
 import 'package:http/http.dart' as http;
+
+import '../model/ArticalModel.dart';
 
 class NewsController extends GetxController {
   List<Article> news = <Article>[];
@@ -21,7 +22,7 @@ class NewsController extends GetxController {
 
   @override
   void onInit() {
-    scrollController = new ScrollController()..addListener(_scrollListener);
+    scrollController = ScrollController()..addListener(_scrollListener);
     getNews();
     super.onInit();
   }
@@ -58,7 +59,7 @@ class NewsController extends GetxController {
     baseApi = "https://newsapi.org/v2/top-headlines?pageSize=10&page=$pageNum&";
     baseApi += country == '' ? 'country=gr&' : 'country=$country&';
     baseApi += category == '' ? '' : 'category=$category&';
-    baseApi += 'apiKey=58b98b48d2c74d9c94dd5dc296ccf7b6';
+    baseApi += 'apiKey=324a14bdfc544adda506cb7dcb5ec4d8';
     if (channel != '') {
       country.value = '';
       category.value = '';

@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:newsappflutter/contoller/NewsController.dart';
-import 'package:newsappflutter/view/ViewNews.dart';
-import 'package:newsappflutter/view/components/sideDrawer.dart';
+import 'package:dailynews/contoller/NewsController.dart';
+import 'package:dailynews/view/ViewNews.dart';
+import 'package:dailynews/view/components/sideDrawer.dart';
 
 class HomeScreen extends StatelessWidget {
   NewsController newsController = Get.put(NewsController());

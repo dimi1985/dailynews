@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:newsappflutter/contoller/NewsController.dart';
-import 'package:newsappflutter/model/utils.dart';
-import 'package:newsappflutter/view/components/dropDownList.dart';
+import 'package:dailynews/contoller/NewsController.dart';
+import 'package:dailynews/model/utils.dart';
+import 'package:dailynews/view/components/dropDownList.dart';
 
 Drawer sideDrawer(NewsController newsController) {
   return Drawer(
